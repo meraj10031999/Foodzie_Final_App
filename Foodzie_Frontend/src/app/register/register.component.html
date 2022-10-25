@@ -1,0 +1,63 @@
+<div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <form #regForm="ngForm" (ngSubmit)="register(regForm)">
+            <div>
+            <input type="text"
+            ngModel
+            name="userName"
+            id="userName"
+            placeholder="Enter your username"
+            class="form-control mb-3"
+            >
+            </div>
+            <div>
+                <input type="text"
+                ngModel
+                name="userFirstName"
+                id="userFirstName"
+                placeholder="Enter your First Name"
+                class="form-control mb-3"
+                >
+                </div>
+
+                <div>
+                    <input type="text"
+                    ngModel
+                    name="userLastName"
+                    id="userLastName"
+                    placeholder="Enter your Last Name"
+                    class="form-control mb-3"
+                    >
+                    </div>
+            <div>
+            <input type="password"
+            ngModel
+            name="userPassword"
+            id="userPassword"
+            placeholder="Enter your password"
+            class="form-control mb-3"
+            >
+            </div>
+            <div class="button">
+            <input type="submit"
+            value="Register"
+            class="btn btn-outline-primary form-control rounded-0">
+            </div>
+            <div class="alert alert-warning" *ngIf="regForm.submitted && isSignUpFailed">
+                Signup failed!<br />{{ errorMessage }}
+              </div>
+        </form>
+        <div class="alert alert-success" *ngIf="isSuccessful">
+            {{ success }}<br /> <a href="/home">Go to home</a>
+          </div>
+    
+    </div>
+</div>
+
+
+
+        
+        
+    
+
+

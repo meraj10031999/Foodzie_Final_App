@@ -1,0 +1,77 @@
+<div class="container mt-5">
+  <div class="card" style="padding: 20px;">
+      <form #addFoodForm="ngForm" (ngSubmit)="addFood(addFoodForm)">
+
+        <div>
+          <input type="text"
+          ngModel
+          name="name"
+          
+          id="name"
+          placeholder="Enter Food Name"
+          class="form-control mb-3"
+          >
+          </div>
+          <div>
+            <input type="text"
+            ngModel
+            name="price"
+          
+            id="price"
+            placeholder="Enter Food Price"
+            class="form-control mb-3"
+            >
+            </div>
+            <div>
+              <input type="text"
+              ngModel
+              name="favorite"
+              
+              id="favorite"
+              placeholder="Enter Favorite Ture or False"
+              class="form-control mb-3"
+              >
+              </div>
+              <div>
+                <input type="text"
+                ngModel
+                name="cookTime"
+                
+                id="cookTime"
+                placeholder="Enter Cook-Time"
+                class="form-control mb-3"
+                >
+                </div>
+                <div>
+                  <input type="text"
+                  ngModel
+                  name="stars"
+                  
+                  id="stars"
+                  placeholder="Enter Food Rating"
+                  class="form-control mb-3"
+                  >
+                  </div>
+                  <div>
+                    <p>Select Food Pic</p>
+                    <form action="">
+                      <input type ="file" id="myFile" name="filename" (change)="onFileSelected($event)">
+                      <input type="'submit">
+                      
+                    </form>
+                    <div class="alert alert-success" *ngIf="isSuccessful">
+                      {{ success }}<br /> <a href="/home">Go to home</a>
+                    </div>
+                  </div>
+
+
+
+          
+          <div class="button">
+          <input type="submit"
+          value="Add"
+          class="btn btn-outline-primary form-control rounded-0">
+          </div>
+      </form>
+  </div>
+</div>

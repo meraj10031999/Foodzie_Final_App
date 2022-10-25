@@ -1,0 +1,54 @@
+
+.container {   
+    padding: 25px;   
+    background-color: rgb(241, 230, 230);  
+    width:fit-content;
+    margin-left: 12cm;
+    margin-top: 3cm;
+    border-radius: 0.4cm ;
+    
+    
+  }   
+  Body {  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: rgb(160, 33, 33); 
+    align-items: center; 
+  }  
+  button {   
+         background-color: #8e0525;   
+         width: auto;  
+          color: rgb(222, 185, 185);   
+          padding: 15px;   
+          margin: 10px 0px;   
+          border: none;   
+          cursor: pointer; 
+          border-radius: 0.6cm;
+          padding-top: 10px;
+          padding-right: 25px;
+           padding-bottom: 10px;
+          padding-left: 25px;
+          display: inline block;
+          text-align: center;
+  
+           }   
+   form {   
+        
+          width: fit-content;  
+      }   
+   input[type=text], input[type=password] {   
+          width:auto;   
+          margin: 8px 0;  
+          padding: 12px 20px;   
+          display: inline-block;   
+          border: 2px solid rgb(128, 0, 0);   
+          border-radius: 0.6cm; 
+      }  
+   button:hover {   
+          opacity: 0.7;   
+      }   
+    .cancelbtn {   
+          width: auto;   
+          padding: 10px 18px;  
+          margin: 10px 5px;  
+      }   
+  

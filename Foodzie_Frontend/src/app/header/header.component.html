@@ -1,0 +1,36 @@
+ <header>
+  <div class="container">
+    <a routerLink="/" class="logo">FOODZIIE</a>
+     <nav>
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/admin"
+          *ngIf="userService.roleMatch(['Admin'])"
+          >Admin Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/user"
+          *ngIf="userService.roleMatch(['User'])"
+          >User Dashboard</a>
+        </li>
+        
+            <!-- <li class="login-section">
+              <a routerLink="/dashboard">Login</a>
+              <div class="menu">
+                <a routerLink="/loginCustomer">Login As Customer</a>
+                <a routerLink="/loginMerchant">Login as Merchant</a>
+              </div>
+            </li> -->
+          <a routerLink="/cart-page">
+            Cart <span>{{cartQuantity}}</span>
+          </a>
+          <a routerLink="register">New Here?(Register)</a>
+          <button *ngIf="! isLoggedIn()" type="button"  routerLink="login">Login</button>
+          <button *ngIf="isLoggedIn()" type="button"  (click)="logout()" >Logout</button>
+      </ul>
+    </nav>
+  </div>
+</header>

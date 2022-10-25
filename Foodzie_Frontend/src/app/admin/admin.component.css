@@ -1,0 +1,19 @@
+.display-block{
+      
+    display: inline-block; 
+}
+.center{
+    text-align: center;
+}
+.container-flex{
+    display: flex;
+    justify-content:space-around;
+    margin-left: 65px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+      
+}
+.a{
+    align-self: center;
+}
+
